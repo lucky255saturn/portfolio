@@ -191,7 +191,23 @@ nav ul li a:hover::after{
     grid-gap: 40px;
     margin-top: 50px;
 }
-.work{
+.github-link {
+    color: #fff; /* Sets the text color to white */
+    text-decoration: none; /* Removes underline from the link */
+    display: inline-flex; /* Aligns the icon and text inline */
+    align-items: center; /* Centers the icon with the text vertically */
+  }
+  
+  .github-link .fab {
+    margin-right: 8px; /* Adds space between the icon and text */
+    font-size: 24px; /* Adjusts the size of the GitHub icon */
+  }
+  
+  .github-link:hover {
+    text-decoration: underline; /* Adds underline on hover for better user experience */
+    color: #ccc; /* Light gray color for hover effect */
+  }
+/*.work{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -287,10 +303,7 @@ nav ul li a:hover::after{
     color: #ff004f;
     transform: translateY(-5px);
 }
-.btn.btn2{
-    display: inline-block;
-    background: #ff004f;
-}
+
 .contact-right form{
     width: 100%;
 }
